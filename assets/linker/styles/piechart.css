@@ -1,0 +1,28 @@
+.arc path {
+  stroke: #fff;
+}
+
+#question_text {
+    margin-top: 50px;
+    float: right;
+    margin-right: 50px;
+    width: 800px;
+    /*width: 100%;*/
+    font-family: sans-serif;
+    font-size: 16px;
+}
+#color_0 {
+    background-color: #458B00;
+}
+#color_1 {
+    background-color: #D80000;
+}
+#color_2 {
+    background-color: #A80000;
+}
+#color_3 {
+    background-color: #780000;
+}
+#color_4 {
+    background-color: #480000;
+}

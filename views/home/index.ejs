@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="main">
+        <h1>researcher</h1>
+        <a class="btn btn-success" href="/researcher/editPassword">change upload password</a>
+
+        <br><br>
+
+        <table class="table">
+            <% for(key in researcher.toJSON() ) { %>
+            <tr>
+                <td><%= key %>: </td>
+                <td class="boxy"><%= researcher[key] %></td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+</div>
