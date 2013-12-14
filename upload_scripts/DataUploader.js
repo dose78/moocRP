@@ -1,4 +1,4 @@
-// node DataUploader.js 52a56ebcd796d90000000001 moocrp 100
+// node DataUploader.js 52a796c38e43540200000001 moocdb 100
 // last number is number of users
 
 var domain = 'http://localhost:1337'
@@ -90,12 +90,17 @@ function generateDividers (numAnswers) {
 }
 
 function get_correct_answer (answers) {
+    var num_corrects = 0;
     for (var i = 0; i < answers.length; i++) {
         if (answers[i].correct) {
-            return answers[i];
+            var correct_answer =  answers[i];
+            num_corrects++;
         }
     }
-    return -1;
+    if (num_corrects != 1) {
+        return -1;
+    }
+    return correct_answer;
 }
 
 function getRandomAnswerId (dividers) {
